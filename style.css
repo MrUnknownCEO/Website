@@ -1,0 +1,130 @@
+/**{
+    box-sizing: border-box;
+}*/
+
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10;
+    overflow-x: hidden;
+    background: url("welding.jpeg");
+    background-repeat: no-repeat;
+    background-size: 2000px 1000px;
+    background-attachment: fixed;
+   
+}
+
+h1{
+    color: white;
+    text-align: right;
+    margin: 10px;
+}
+
+.box {
+
+    background-color: 0, 0, 0, 0.5e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 45px;
+}
+
+ul{
+    margin: 0;
+    padding:0;
+}
+
+img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/*Global*/
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+/*Header*/
+
+
+
+header{
+    background:#35424a;
+    color:#F9F6F5;
+    padding-top:30px ;
+    min-height: 70px;
+    border-bottom: orange 3px solid;
+    background: rgba(0, 0, 0, 0.5) /*opacity*/
+    }
+
+header a{
+    color:pink;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    }
+
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    float: left;
+    margin:0;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color:#F9F6F5;
+    font-weight:bold;
+}
+
+header a:hover{
+    color:red;
+    font-weight: bold;
+}
+
+section #contain {
+    background:(0, 0, 0, 1);
+}
